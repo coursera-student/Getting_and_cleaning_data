@@ -1,0 +1,16 @@
+CodeBook
+===
+```
+The goal of this exercise was to clean and reshape data originating from several files that were provided to us. 
+
+There were initally 561 measurements (see "features.txt" for a complete list) for this study. 30 individuals carried a smartphone while performing the following six activities:
+
+    1. Walking
+    2. Walking upstairs
+    3. Walking downstairs
+    4. Sitting
+    5. Standing
+    6. Laying
+    
+Detailed steps to clean the data are included in the run_analysis.R script and will not be repeated here.
+```
