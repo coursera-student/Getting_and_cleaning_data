@@ -28,22 +28,23 @@
 # 2 - Extract only the measurements on the mean and standard deviation 
 # for each measurement
     ## According to the "features_info.txt" file, the columns including
-    calculations of the mean include "mean" or "Mean" in the name variable. 
-    Those include:  
-    mean()
-    meanFreq()
-    gravityMean
-    tBodyAccMean
-    tBodyAccJerkMean
-    tBodyGyroMean
-    tBodyGyroJerkMean
+    ## calculations of the mean include "mean" or "Mean" in the name variable. 
+    ## Therefore, I will use variables that include:  
+    ## mean()
+    ## meanFreq()
+    ## gravityMean
+    ## tBodyAccMean
+    ## tBodyAccJerkMean
+    ## tBodyGyroMean
+    ## tBodyGyroJerkMean
+    
     col.mean <- grep("[Mm]ean", colnames(data))
     col.mean # returns the column numbers
     names(data[col.mean]) # returns the column names
     length(col.mean) # 53 variables
     
-    The columns corresponding to the standard deviation include std()
-    in the name variable.
+    ## The columns corresponding to the standard deviation include std()
+    ## in the name variable.
     col.std <- grep("std()", colnames(data), fixed=TRUE)
     col.std # returns the column numbers
     names(data[col.std]) # returns the column names
@@ -96,4 +97,4 @@
                         activity + descriptive.activity + subject ~ variable, mean)
     dim(tidy.data) # 180 x 89
     tidy.data[1:15, 1:5] # first 15 rows, first 5 columns 
-    write.table(tidy.data, "tidy.data.txt", sep="\t") # Voila!
+    write.table(tidy.data, "tidy.data.txt", sep="\t")
