@@ -15,6 +15,6 @@ This repo includes the following:
     - Appropriately labels the data set with descriptive activity names.   
 4. an independent **tidy data** set with the average of each variable for each activity and each subject
 
-
+<a href="https://github.com/coursera-student/Getting_and_cleaning_data" target="_blank">Link</a>
  
 
